@@ -14,6 +14,9 @@ class Settings(BaseSettings):
     openai_model: str = "llama3.2:3b"
     embedding_model: str = "nomic-embed-text"
 
+    # Ollama (native API for embeddings)
+    ollama_base_url: str = "http://localhost:11434"
+
     # RAG
     chunk_size: int = 1000
     chunk_overlap: int = 200

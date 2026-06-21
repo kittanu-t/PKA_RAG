@@ -17,7 +17,7 @@ def upload_files(files: List) -> None:
     for file in files:
         files_data = {"file": (file.name, file.getvalue(), "application/pdf")}
         try:
-            response = httpx.post(f"{API_URL}/upload", files=files_data, timeout=120)
+            response = httpx.post(f"{API_URL}/upload", files=files_data, timeout=600)
             if response.status_code == 200:
                 result = response.json()
                 st.success(
