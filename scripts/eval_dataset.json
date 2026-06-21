@@ -1,0 +1,19 @@
+{
+    "questions": [
+        {
+            "question": "What is the main topic of the document?",
+            "expected_keywords": ["topic", "main", "subject"],
+            "expected_source": null
+        },
+        {
+            "question": "What are the key findings or conclusions?",
+            "expected_keywords": ["finding", "conclusion", "result"],
+            "expected_source": null
+        },
+        {
+            "question": "What methodology was used?",
+            "expected_keywords": ["method", "approach", "technique"],
+            "expected_source": null
+        }
+    ]
+}
